@@ -1,0 +1,440 @@
+/*
+Btn
+
+Helper for creating buttons. Prepares any element to styling as a button.
+
+Markup: ../../../docs/examples/css_lib-helpers/btn/btn.html
+
+Styleguide: css_lib.helpers.btn
+*/
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.Bgc-white {
+  background-color: white;
+}
+
+.C-\$accent900 {
+  color: var(--ml-accent900);
+}
+
+.Fnf-mUss {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.-ShortTsd200ms {
+  --ml-shortTsd: 200ms;
+}
+
+.-HeaderH12u {
+  --ml-headerH: 3rem;
+}
+
+.Ps-a {
+  position: absolute;
+}
+
+.W100p {
+  width: 100%;
+}
+
+.H100vh {
+  height: 100vh;
+}
+
+.Bgc\#242d34 {
+  background-color: #242d34;
+}
+
+.D-f {
+  display: flex;
+}
+
+.Jc-c {
+  justify-content: center;
+}
+
+.Ai-c {
+  align-items: center;
+}
+
+.Mxw600 {
+  max-width: 600px;
+}
+
+.W90p {
+  width: 90%;
+}
+
+.H160u {
+  height: 40rem;
+}
+
+.Mxh90vh {
+  max-height: 90vh;
+}
+
+.Bgc-black {
+  background-color: black;
+}
+
+.T5p {
+  top: 5%;
+}
+
+.Bdrd5u {
+  border-radius: 1.25rem;
+}
+
+.Ovy-s {
+  overflow-y: scroll;
+}
+
+.P0\;0\;5u {
+  padding: 0px 0px 1.25rem;
+}
+
+.P2u\;3u {
+  padding: 0.5rem 0.75rem;
+}
+
+.H-\$headerH {
+  height: var(--ml-headerH);
+}
+
+.Ps-f {
+  position: fixed;
+}
+
+.Bgc\#000\*0\.5 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.-Bdtrd5u {
+  border-top-right-radius: 1.25rem;
+  border-top-left-radius: 1.25rem;
+}
+
+.Zi20 {
+  z-index: 20;
+}
+
+.Ai-str {
+  align-items: stretch;
+}
+
+.Jc-fs {
+  justify-content: flex-start;
+}
+
+.-Sz100p {
+  width: 100%;
+  height: 100%;
+}
+
+.Flg0 {
+  flex-grow: 0;
+}
+
+.W10p {
+  width: 10%;
+}
+
+.H100p {
+  height: 100%;
+}
+
+.Bd-n {
+  border: none;
+}
+
+.Bgc-tp {
+  background-color: transparent;
+}
+
+.Bgc-\$hover900_h:hover {
+  background-color: var(--ml-hover900);
+}
+
+.Apcr1 {
+  aspect-ratio: 1;
+}
+
+.D {
+  display: block;
+}
+
+.Bdrd100p {
+  border-radius: 100%;
+}
+
+.Tsd-\$shortTsd {
+  transition-duration: var(--ml-shortTsd);
+}
+
+.Fi-cc {
+  fill: currentColor;
+}
+
+.-Sz26 {
+  width: 26px;
+  height: 26px;
+}
+
+.P0\.5u {
+  padding: 0.125rem;
+}
+
+.Us-n {
+  user-select: none;
+}
+
+.Flg0\.9 {
+  flex-grow: 0.9;
+}
+
+.Fnw700 {
+  font-weight: 700;
+}
+
+.Fns5\.5u {
+  font-size: 1.375rem;
+}
+
+.Flg0\.1 {
+  flex-grow: 0.1;
+}
+
+.Bgc-\$accent900 {
+  background-color: var(--ml-accent900);
+}
+
+.Bgc-\$hover850_h:hover {
+  background-color: var(--ml-hover850);
+}
+
+.P0 {
+  padding: 0px;
+}
+
+.M0 {
+  margin: 0px;
+}
+
+.C-\$accent850 {
+  color: var(--ml-accent850);
+}
+
+.W80p {
+  width: 80%;
+}
+
+.Bdrd10u {
+  border-radius: 2.5rem;
+}
+
+.Fnw600 {
+  font-weight: 600;
+}
+
+.Ps-r {
+  position: relative;
+}
+
+.Mt-\$headerH {
+  margin-top: var(--ml-headerH);
+}
+
+.H50u {
+  height: 12.5rem;
+}
+
+.Ov-h {
+  overflow: hidden;
+}
+
+.Mb20u {
+  margin-bottom: 5rem;
+}
+
+.P0\;1 {
+  padding: 0px 1px;
+}
+
+.Zi2 {
+  z-index: 2;
+}
+
+.T0 {
+  top: 0px;
+}
+
+.L0 {
+  left: 0px;
+}
+
+.Gap5u {
+  gap: 1.25rem;
+}
+
+.Bgc-\$hover200_h:hover {
+  background-color: var(--ml-hover200);
+}
+
+.Bgc-\$hover400 {
+  background-color: var(--ml-hover400);
+}
+
+.Bgc-\$hover300_h:hover {
+  background-color: var(--ml-hover300);
+}
+
+.P2u {
+  padding: 0.5rem;
+}
+
+.O0 {
+  opacity: 0;
+}
+
+.-Ctx-wallpaper:hover .\^wallpaper\:h\:_O1 {
+  opacity: 1;
+}
+
+.Zi10 {
+  z-index: 10;
+}
+
+.H30u {
+  height: 7.5rem;
+}
+
+.D-ib {
+  display: inline-block;
+}
+
+.Bd2\;s\;black {
+  border: 2px solid black;
+}
+
+.T38u {
+  top: 9.5rem;
+}
+
+.L5u {
+  left: 1.25rem;
+}
+
+.Bgc-\$hover200 {
+  background-color: var(--ml-hover200);
+}
+
+.O1_h:hover {
+  opacity: 1;
+}
+
+.P3u\;5u_\:div div {
+  padding: 0.75rem 1.25rem;
+}
+
+.Tsd-\$shortTsd_\:label label {
+  transition-duration: var(--ml-shortTsd);
+}
+
+.Tsd-\$shortTsd_\:span span {
+  transition-duration: var(--ml-shortTsd);
+}
+
+.Bd1\;s\;\$accent600 {
+  border: 1px solid var(--ml-accent600);
+}
+
+.Bd1\;s\;\$accent200_fw:focus-within {
+  border: 1px solid var(--ml-accent200);
+}
+
+.C-\$accent600 {
+  color: var(--ml-accent600);
+}
+
+.Bdrd2u {
+  border-radius: 0.5rem;
+}
+
+.Ct-\'\;\'\;\'\*\'_af::after {
+  content: ' ' '*';
+}
+
+.C-\$accent300_fw\:af:focus-within::after {
+  color: var(--ml-accent300);
+}
+
+.Ps-a_af::after {
+  position: absolute;
+}
+
+.T2u_af::after {
+  top: 0.5rem;
+}
+
+.R2u_af::after {
+  right: 0.5rem;
+}
+
+.Bdc-\$accent400_\!fw\:h:not(:focus-within):hover {
+  border-color: var(--ml-accent400);
+}
+
+.Mb1u {
+  margin-bottom: 0.25rem;
+}
+
+.-Ctx:focus-within .\^\:fw\:_C-\$accent200 {
+  color: var(--ml-accent200);
+}
+
+.Ol-n {
+  outline: none;
+}
+
+.Rs-n {
+  resize: none;
+}
+
+.Fi-\$accent200_h\:\:svg:hover svg {
+  fill: var(--ml-accent200);
+}
+
+.Jc-sb {
+  justify-content: space-between;
+}
+
+.Bgc-\$accent600_h:hover {
+  background-color: var(--ml-accent600);
+}
+
+.P2u\;5u {
+  padding: 0.5rem 1.25rem;
+}
+
+.Fns5u {
+  font-size: 1.25rem;
+}
+
+.Fi-\$accent800 {
+  fill: var(--ml-accent800);
+}
+
+.Tsd-ih {
+  transition-duration: inherit;
+}

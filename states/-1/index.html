@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body class="Bgc-white C-$accent900 Fnf-mUss -ShortTsd200ms -HeaderH12u">
+
+	<div class="Ps-a W100p H100vh Bgc#242d34 D-f Jc-c Ai-c">
+
+		<div class="Ps-a Mxw600 W90p H160u Mxh90vh Bgc-black T5p Bdrd5u Ovy-s P0;0;5u">
+			<!-- Header -->
+
+			<header class="P2u;3u H-$headerH Ps-f Mxw600 W90p Bgc#000*0.5 -Bdtrd5u Zi20">
+				<div class="D-f Ai-str Jc-fs -Sz100p">
+					<div class="Flg0 W10p H100p ">
+						<!-- Close button-->
+						<button class="btn Bd-n C-$accent900 Bgc-tp Bgc-$hover900_h H100p Apcr1 D Bdrd100p Tsd-$shortTsd">
+							<svg viewBox="0 0 24 24" aria-hidden="true" class="Fi-cc -Sz26 P0.5u Us-n">
+								<use href="img/sprite.svg#cross"></use>
+							</svg>
+						</button>
+
+					</div>
+
+					<!-- Caption-->
+					<div class="Flg0.9 H100p Fnw700 Fns5.5u">
+						Edit profile
+					</div>
+
+					<div class="Flg0.1 H100p">
+						<!-- Save button -->
+						<button class="btn Bgc-$accent900 Bgc-$hover850_h D P0 M0 C-$accent850 H100p W80p Bdrd10u Fnw600 Tsd-$shortTsd">
+							<span class="D">
+								Save
+							</span>
+						</button>
+					</div>
+				</div>
+			</header>
+
+			<!-- Form's main part -->
+
+			<main class="P0 Ps-r">
+
+				<!-- Profile wallpaper-->
+				<div class="Mt-$headerH H50u Ov-h Ps-r D-f Jc-c Ai-c Mb20u">
+					<!-- Wallpaper-->
+					<img src="img/wallpaper.jpg" class="D P0;1 W100p Ps-r" alt="wallpaper">
+					<div class="Ps-a Zi2 T0 L0 -Sz100p D-f Jc-c Ai-c Gap5u Bgc-$hover200_h Bgc-$hover400 Tsd-$shortTsd -Ctx-wallpaper">
+
+						<!-- Change wallpaper button-->
+						<div class="Bgc-$hover400 Bgc-$hover300_h Tsd-$shortTsd Bdrd100p P2u O0 ^wallpaper:h:_O1">
+							<svg viewBox="0 0 24 24" aria-hidden="true" class="Fi-cc -Sz26 P0.5u Us-n" >
+								<use href="img/sprite.svg#photo"></use>
+							</svg>
+						</div>
+
+						<!-- Delete wallpaper button -->
+						<div class="Bgc-$hover400 Bgc-$hover300_h Tsd-$shortTsd Bdrd100p P2u O0 ^wallpaper:h:_O1">
+							<svg viewBox="0 0 24 24" aria-hidden="true" class="Fi-cc -Sz26 P0.5u Us-n" >
+								<use href="img/sprite.svg#cross"></use>
+							</svg>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="Ps-a Zi10 H30u D-ib Bd2;s;black Bdrd100p Apcr1 T38u L5u">
+					<!-- Profile photo-->
+					<img src="img/json.jpg" class="D Bdrd100p" alt="profile-photo">
+
+					<div class="Ps-a T0 L0 -Sz100p Bdrd100p D-f Jc-c Ai-c Bgc-$hover200 O0 O1_h Tsd-$shortTsd">
+						<!-- Change profile photo button-->
+						<div class="Bgc-$hover400 Bgc-$hover300_h Tsd-$shortTsd Bdrd100p P2u">
+							<svg viewBox="0 0 24 24" aria-hidden="true" class="Fi-cc -Sz26 P0.5u Us-n">
+								<use href="img/sprite.svg#photo"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+
+				<!-- The part with the inputs -->
+				<div class="P3u;5u_:div Tsd-$shortTsd_:label  Tsd-$shortTsd_:span">
+
+					<!-- Name -->
+					<div>
+						<label  for="name" class="D Ps-r Bd1;s;$accent600 Bd1;s;$accent200_fw C-$accent600 Bdrd2u P2u -Ctx Ct-';';'*'_af C-$accent300_fw:af Ps-a_af T2u_af R2u_af Bdc-$accent400_!fw:h">
+							<span class="D Mb1u ^:fw:_C-$accent200">Name</span>
+							<input maxlength="50" id="name" class="D W100p Bgc-tp Bd-n Ol-n C-$accent900" type="text" placeholder="" value="Json Statement">
+						</label>
+					</div>
+
+					<!-- Bio-->
+					<div>
+						<label  for="Bio" class="D Bd1;s;$accent600 Bd1;s;$accent200_fw C-$accent600 Bdrd2u P2u -Ctx Bdc-$accent400_!fw:h">
+							<span class="D Mb1u ^:fw:_C-$accent200">Bio</span>
+
+							<textarea id="Bio" class="D W100p Bgc-tp Bd-n Ol-n C-$accent900 Txw-w Rs-n" type="text" placeholder="" >A professional Frontend dev and killer-feature maker with 20 years of experience</textarea>
+						</label>
+					</div>
+
+					<!-- Location -->
+					<div>
+						<label for="location" class="D Bd1;s;$accent600 Bd1;s;$accent200_fw C-$accent600 Bdrd2u P2u -Ctx Bdc-$accent400_!fw:h">
+							<span class="D Mb1u ^:fw:_C-$accent200">Location</span>
+							<input maxlength="100" id="location" class="D W100p Bgc-tp Bd-n Ol-n C-$accent900" type="text" placeholder="" value="Planet Earth">
+						</label>
+					</div>
+
+					<!-- Website -->
+					<div>
+						<label  for="website" class="D Bd1;s;$accent600 Bd1;s;$accent200_fw C-$accent600 Bdrd2u P2u -Ctx Bdc-$accent400_!fw:h">
+							<span class="D Mb1u ^:fw:_C-$accent200">Website</span>
+							<input maxlength="100" id="website" class="D W100p Bgc-tp Bd-n Ol-n C-$accent900" type="text" placeholder="" value="https://mlut.style/">
+						</label>
+					</div>
+				</div>
+
+				<!-- Expanded bio-->
+				<div class="Fi-$accent200_h::svg">
+					<div class="D-f Ai-c Jc-sb -Ctx Bgc-$accent600_h Tsd-$shortTsd P2u;5u">
+						<span class="D Fns5u"> Create expanded bio</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true" class="Fi-$accent800 -Sz26 P0.5u Us-n Tsd-ih">
+								<use href="img/sprite.svg#larger"></use>
+						</svg>
+					</div>
+				</div>
+
+				<!-- Skills -->
+				<div class="Fi-$accent200_h::svg">
+					<div class="D-f Ai-c Jc-sb -Ctx Bgc-$accent600_h Tsd-$shortTsd P2u;5u">
+						<span class="D Fns5u"> Add your skills</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true" class="Fi-$accent800 -Sz26 P0.5u Us-n Tsd-ih">
+								<use href="img/sprite.svg#larger"></use>
+						</svg>
+					</div>
+				</div>
+
+			</main>
+		</div>
+	</div>
+</body>
+</html>
