@@ -1,4 +1,202 @@
 /*
+CSS variables
+
+Global CSS custom properties which used in mlut.
+
+--ml-gg = 0.75rem - [grid gutter](section-concepts.html#kssref-concepts-custom_unit-gg).
+--ml-gscc = 12 - number of columns in the grid system. Sets by [$gs-columns](section-settings.html#kssref-settings-gs). Available only with `$legacy-grid-system` flag enabled
+
+Styleguide: css_lib.styles.css_vars
+*/
+:root {
+  --ml-gg: 0.75rem;
+}
+@media (min-width: 992px) {
+  :root {
+    --ml-gg: 1rem;
+  }
+}
+
+/*
+Generic
+
+Generic CSS that contains `box-sizing`, reset, browser bugs fixes etc. You can configure it with settings.
+
+Styleguide: css_lib.styles.generic
+*/
+/*! purgecss start ignore */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+}
+
+main {
+  display: block;
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Show the overflow in IE
+3. Correct the inheritance of border color in Firefox
+*/
+hr {
+  height: 0;
+  overflow: visible;
+  color: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: monospace, monospace;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.4em;
+}
+
+sub {
+  top: 0.3em;
+}
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari
+2. Correct table border color inheritance in all Chrome and Safari
+*/
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+  vertical-align: bottom;
+}
+
+source {
+  display: none;
+}
+
+img,
+svg,
+canvas,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+legend {
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+summary {
+  display: list-item;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button {
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+textarea {
+  overflow: auto;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/*! purgecss end ignore */
+/*
 Btn
 
 Helper for creating buttons. Prepares any element to styling as a button.
@@ -18,6 +216,76 @@ Styleguide: css_lib.helpers.btn
   background: none;
   border: 0;
   cursor: pointer;
+}
+
+/*
+Wrapper
+
+The helper-container for the main content of the page. The maximum width is set in the [settings](section-settings.html#kssref-settings-general). The default is `1200px`.
+
+The container has sides `padding` that equal to gutters so that the content does not stick to sides on small screens. On wide screens the container is centered.
+
+Markup: ../../../docs/examples/css_lib-helpers/wrapper/wrapper.html
+
+Styleguide: css_lib.helpers.wrapper
+*/
+.wrapper {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrapper {
+  padding-right: calc(var(--ml-gg) * 1);
+  padding-left: calc(var(--ml-gg) * 1);
+}
+
+/*
+Ratio-box
+
+Helper for creating containers, with proportional width and height. Implemented using a pseudo-element with a `padding-bottom` in %.
+
+The default aspect ratio is 16:9.
+
+.Pt75p_b - 4:3 aspect ratio.
+.Pt100p_b - 1:1 aspect ratio.
+
+Markup: ../../../docs/examples/css_lib-helpers/ratio-block/ratio-block.hbs
+
+Styleguide: css_lib.helpers.ratio-box
+*/
+.ratio-box {
+  position: relative;
+}
+.ratio-box::before {
+  display: block;
+  width: 100%;
+  padding-top: 56.25%;
+  content: "";
+}
+.ratio-box > :first-child {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  --ml-accent900: #e7e9ea;
+  --ml-accent850: #0f1419;
+  --ml-accent600: #333639;
+  --ml-accent200: #1d9bf0;
+  --ml-accent300: #fa4646;
+  --ml-accent400: #6bc4ff;
+  --ml-hover900: #4a4a4a;
+  --ml-hover850: #bdbdbd;
+  --ml-hover400: rgba(0,0,0,0.40);
+  --ml-hover300: rgba(0,0,0,0.20);
+  --ml-hover200: rgba(0,0,0,0.10);
+}
+
+div {
+  scrollbar-width: none;
 }
 
 .Bgc-white {
@@ -162,10 +430,6 @@ Styleguide: css_lib.helpers.btn
   background-color: transparent;
 }
 
-.Bgc-\$hover900_h:hover {
-  background-color: var(--ml-hover900);
-}
-
 .Apcr1 {
   aspect-ratio: 1;
 }
@@ -217,10 +481,6 @@ Styleguide: css_lib.helpers.btn
 
 .Bgc-\$accent900 {
   background-color: var(--ml-accent900);
-}
-
-.Bgc-\$hover850_h:hover {
-  background-color: var(--ml-hover850);
 }
 
 .P0 {
@@ -287,28 +547,12 @@ Styleguide: css_lib.helpers.btn
   gap: 1.25rem;
 }
 
-.Bgc-\$hover200_h:hover {
-  background-color: var(--ml-hover200);
-}
-
 .Bgc-\$hover400 {
   background-color: var(--ml-hover400);
 }
 
-.Bgc-\$hover300_h:hover {
-  background-color: var(--ml-hover300);
-}
-
 .P2u {
   padding: 0.5rem;
-}
-
-.O0 {
-  opacity: 0;
-}
-
-.-Ctx-wallpaper:hover .\^wallpaper\:h\:_O1 {
-  opacity: 1;
 }
 
 .Zi10 {
@@ -339,68 +583,16 @@ Styleguide: css_lib.helpers.btn
   background-color: var(--ml-hover200);
 }
 
-.O1_h:hover {
-  opacity: 1;
-}
-
-.P3u\;5u_\:div div {
-  padding: 0.75rem 1.25rem;
-}
-
-.Tsd-\$shortTsd_\:label label {
-  transition-duration: var(--ml-shortTsd);
-}
-
-.Tsd-\$shortTsd_\:span span {
-  transition-duration: var(--ml-shortTsd);
-}
-
 .Bd1\;s\;\$accent600 {
   border: 1px solid var(--ml-accent600);
-}
-
-.Bd1\;s\;\$accent200_fw:focus-within {
-  border: 1px solid var(--ml-accent200);
 }
 
 .C-\$accent600 {
   color: var(--ml-accent600);
 }
 
-.Bdrd2u {
-  border-radius: 0.5rem;
-}
-
-.Ct-\'\;\'\;\'\*\'_af::after {
-  content: ' ' '*';
-}
-
-.C-\$accent300_fw\:af:focus-within::after {
-  color: var(--ml-accent300);
-}
-
-.Ps-a_af::after {
-  position: absolute;
-}
-
-.T2u_af::after {
-  top: 0.5rem;
-}
-
-.R2u_af::after {
-  right: 0.5rem;
-}
-
-.Bdc-\$accent400_\!fw\:h:not(:focus-within):hover {
-  border-color: var(--ml-accent400);
-}
-
 .Mb1u {
   margin-bottom: 0.25rem;
-}
-
-.-Ctx:focus-within .\^\:fw\:_C-\$accent200 {
-  color: var(--ml-accent200);
 }
 
 .Ol-n {
@@ -411,16 +603,8 @@ Styleguide: css_lib.helpers.btn
   resize: none;
 }
 
-.Fi-\$accent200_h\:\:svg:hover svg {
-  fill: var(--ml-accent200);
-}
-
 .Jc-sb {
   justify-content: space-between;
-}
-
-.Bgc-\$accent600_h:hover {
-  background-color: var(--ml-accent600);
 }
 
 .P2u\;5u {

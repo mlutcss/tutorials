@@ -272,20 +272,19 @@ Styleguide: css_lib.helpers.ratio-box
 
 html {
   --ml-accent900: #e7e9ea;
-  --ml-accent850: #040404;
-  --ml-accent800:#16181c;
-  --ml-accent600:#333639;
-  --ml-accent200:#1d9bf0;
-  --ml-accent400:#83cbfb;
-  --ml-accent300: rgb(255, 74, 74);
-  --ml-hover900: #181919;
-  --ml-hover850: #d7dbdc;
-  --ml-hover200: rgba(0,0,0,0.10);
+  --ml-accent850: #0f1419;
+  --ml-accent600: #333639;
+  --ml-accent200: #1d9bf0;
+  --ml-accent300: #fa4646;
+  --ml-accent400: #6bc4ff;
+  --ml-hover900: #4a4a4a;
+  --ml-hover850: #bdbdbd;
   --ml-hover400: rgba(0,0,0,0.40);
   --ml-hover300: rgba(0,0,0,0.20);
+  --ml-hover200: rgba(0,0,0,0.10);
 }
 
-div, textarea {
+div {
   scrollbar-width: none;
 }
 
@@ -552,28 +551,32 @@ div, textarea {
   left: 0px;
 }
 
-.Gap3u {
-  gap: 0.75rem;
+.Gap5u {
+  gap: 1.25rem;
 }
 
-.Bgc-\$hover200 {
+.Bgc-\$hover200_h:hover {
   background-color: var(--ml-hover200);
-}
-
-.O0 {
-  opacity: 0;
-}
-
-.O1_h:hover {
-  opacity: 1;
 }
 
 .Bgc-\$hover400 {
   background-color: var(--ml-hover400);
 }
 
-.Bgc\#000\*0\.3 {
-  background-color: rgba(0, 0, 0, 0.3);
+.Bgc-\$hover300_h:hover {
+  background-color: var(--ml-hover300);
+}
+
+.P2u {
+  padding: 0.5rem;
+}
+
+.O0 {
+  opacity: 0;
+}
+
+.-Ctx-wallpaper:hover .\^wallpaper\:h\:_O1 {
+  opacity: 1;
 }
 
 .Zi10 {
@@ -598,6 +601,14 @@ div, textarea {
 
 .L5u {
   left: 1.25rem;
+}
+
+.Bgc-\$hover200 {
+  background-color: var(--ml-hover200);
+}
+
+.O1_h:hover {
+  opacity: 1;
 }
 
 .P3u\;5u_\:div div {
@@ -626,10 +637,6 @@ div, textarea {
 
 .Bdrd2u {
   border-radius: 0.5rem;
-}
-
-.P2u {
-  padding: 0.5rem;
 }
 
 .Ct-\'\;\'\;\'\*\'_af::after {
@@ -700,18 +707,14 @@ div, textarea {
   transition-duration: inherit;
 }
 
-.Gap5u {
-  gap: 1.25rem;
+.M-a {
+  margin: auto;
 }
 
-.Bgc-\$hover200_h:hover {
-  background-color: var(--ml-hover200);
+.W18u {
+  width: 4.5rem;
 }
 
-.Bgc-\$hover300_h:hover {
-  background-color: var(--ml-hover300);
-}
-
-.-Ctx-wallpaper:hover .\^wallpaper\:h\:_O1 {
-  opacity: 1;
+.Fi-\$accent600 {
+  fill: var(--ml-accent600);
 }
