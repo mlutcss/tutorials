@@ -304,8 +304,8 @@ div {
   --ml-shortTsd: 200ms;
 }
 
-.-HeaderH12u {
-  --ml-headerH: 3rem;
+.-HeaderH13u {
+  --ml-headerH: 3.25rem;
 }
 
 .Ps-a {
@@ -483,6 +483,14 @@ div {
   flex-grow: 0.1;
 }
 
+.P0\.5u\;0 {
+  padding: 0.125rem 0px;
+}
+
+.Ml-a {
+  margin-left: auto;
+}
+
 .Bgc-\$accent900 {
   background-color: var(--ml-accent900);
 }
@@ -491,20 +499,12 @@ div {
   background-color: var(--ml-hover850);
 }
 
-.P0 {
-  padding: 0px;
-}
-
-.M0 {
-  margin: 0px;
-}
-
 .C-\$accent850 {
   color: var(--ml-accent850);
 }
 
-.W80p {
-  width: 80%;
+.W18u {
+  width: 4.5rem;
 }
 
 .Bdrd10u {
@@ -513,6 +513,14 @@ div {
 
 .Fnw600 {
   font-weight: 600;
+}
+
+.Lnh100p {
+  line-height: 100%;
+}
+
+.P0 {
+  padding: 0px;
 }
 
 .Ps-r {
@@ -611,8 +619,12 @@ div {
   opacity: 1;
 }
 
-.P3u\;5u_\:div div {
-  padding: 0.75rem 1.25rem;
+.Mb3u_\:div div {
+  margin-bottom: 0.75rem;
+}
+
+.P0\;5u_\:div div {
+  padding: 0px 1.25rem;
 }
 
 .Tsd-\$shortTsd_\:label label {
@@ -699,22 +711,14 @@ div {
   font-size: 1.25rem;
 }
 
-.Fi-\$accent800 {
-  fill: var(--ml-accent800);
+.Fi-\$accent600 {
+  fill: var(--ml-accent600);
 }
 
 .Tsd-ih {
   transition-duration: inherit;
 }
 
-.M-a {
-  margin: auto;
-}
-
-.W18u {
-  width: 4.5rem;
-}
-
-.Fi-\$accent600 {
-  fill: var(--ml-accent600);
+.Mb5u_\:div div {
+  margin-bottom: 1.25rem;
 }
