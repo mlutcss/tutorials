@@ -271,17 +271,18 @@ Styleguide: css_lib.helpers.ratio-box
 }
 
 html {
+  --ml-accent500: rgba(231, 233, 234, 0.5);
   --ml-accent900: #e7e9ea;
   --ml-accent850: #0f1419;
   --ml-accent600: #333639;
   --ml-accent200: #1d9bf0;
   --ml-accent300: #fa4646;
   --ml-accent400: #6bc4ff;
-  --ml-hover900: #4a4a4a;
-  --ml-hover850: #bdbdbd;
-  --ml-hover400: rgba(0,0,0,0.40);
-  --ml-hover300: rgba(0,0,0,0.20);
-  --ml-hover200: rgba(0,0,0,0.10);
+  --ml-secondary900: #4a4a4a;
+  --ml-secondary850: #bdbdbd;
+  --ml-secondary400: rgba(0,0,0,0.40);
+  --ml-secondary300: rgba(0,0,0,0.20);
+  --ml-secondary200: rgba(0,0,0,0.10);
 }
 
 div {
@@ -300,10 +301,6 @@ div {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.-ShortTsd200ms {
-  --ml-shortTsd: 200ms;
-}
-
 .-HeaderH13u {
   --ml-headerH: 3.25rem;
 }
@@ -320,8 +317,8 @@ div {
   height: 100vh;
 }
 
-.Bgc\#242d34 {
-  background-color: #242d34;
+.Bgc-grey {
+  background-color: grey;
 }
 
 .D-f {
@@ -384,7 +381,7 @@ div {
   position: fixed;
 }
 
-.Bgc\#000\*0\.5 {
+.Bgc\#000\*50p {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -410,10 +407,6 @@ div {
   height: 100%;
 }
 
-.Flg0 {
-  flex-grow: 0;
-}
-
 .W10p {
   width: 10%;
 }
@@ -430,8 +423,8 @@ div {
   background-color: transparent;
 }
 
-.Bgc-\$hover900_h:hover {
-  background-color: var(--ml-hover900);
+.Bgc-\$secondary900_h:hover {
+  background-color: var(--ml-secondary900);
 }
 
 .Apcr1 {
@@ -446,12 +439,9 @@ div {
   border-radius: 100%;
 }
 
-.Tsd-\$shortTsd {
-  transition-duration: var(--ml-shortTsd);
-}
-
-.Fi-cc {
-  fill: currentColor;
+.-Ts {
+  transition-duration: 0.3s;
+  transition-property: background-color, border-color, color, fill, stroke, backdrop-filter, box-shadow, filter, opacity, transform;
 }
 
 .-Sz26 {
@@ -459,28 +449,16 @@ div {
   height: 26px;
 }
 
-.P0\.5u {
-  padding: 0.125rem;
-}
-
 .Us-n {
   user-select: none;
-}
-
-.Flg0\.9 {
-  flex-grow: 0.9;
 }
 
 .Fnw700 {
   font-weight: 700;
 }
 
-.Fns5\.5u {
-  font-size: 1.375rem;
-}
-
-.Flg0\.1 {
-  flex-grow: 0.1;
+.Fns6u {
+  font-size: 1.5rem;
 }
 
 .P0\.5u\;0 {
@@ -495,8 +473,8 @@ div {
   background-color: var(--ml-accent900);
 }
 
-.Bgc-\$hover850_h:hover {
-  background-color: var(--ml-hover850);
+.Bgc-\$secondary850_h:hover {
+  background-color: var(--ml-secondary850);
 }
 
 .C-\$accent850 {
@@ -523,7 +501,7 @@ div {
   padding: 0px;
 }
 
-.Ps-r {
+.Ps {
   position: relative;
 }
 
@@ -563,16 +541,16 @@ div {
   gap: 1.25rem;
 }
 
-.Bgc-\$hover200_h:hover {
-  background-color: var(--ml-hover200);
+.Bgc-\$secondary200_h:hover {
+  background-color: var(--ml-secondary200);
 }
 
-.Bgc-\$hover400 {
-  background-color: var(--ml-hover400);
+.Bgc-\$secondary400 {
+  background-color: var(--ml-secondary400);
 }
 
-.Bgc-\$hover300_h:hover {
-  background-color: var(--ml-hover300);
+.Bgc-\$secondary300_h:hover {
+  background-color: var(--ml-secondary300);
 }
 
 .P2u {
@@ -611,36 +589,37 @@ div {
   left: 1.25rem;
 }
 
-.Bgc-\$hover200 {
-  background-color: var(--ml-hover200);
+.Bgc-\$secondary200 {
+  background-color: var(--ml-secondary200);
 }
 
 .O1_h:hover {
   opacity: 1;
 }
 
-.Mb3u_\:div div {
-  margin-bottom: 0.75rem;
+.-Ts_\:input\,\:textarea input, .-Ts_\:input\,\:textarea textarea {
+  transition-duration: 0.3s;
+  transition-property: background-color, border-color, color, fill, stroke, backdrop-filter, box-shadow, filter, opacity, transform;
 }
 
-.P0\;5u_\:div div {
+.C-\$accent500_\:input\,\:textarea input, .C-\$accent500_\:input\,\:textarea textarea {
+  color: var(--ml-accent500);
+}
+
+.Mb5u {
+  margin-bottom: 1.25rem;
+}
+
+.P0\;5u {
   padding: 0px 1.25rem;
-}
-
-.Tsd-\$shortTsd_\:label label {
-  transition-duration: var(--ml-shortTsd);
-}
-
-.Tsd-\$shortTsd_\:span span {
-  transition-duration: var(--ml-shortTsd);
 }
 
 .Bd1\;s\;\$accent600 {
   border: 1px solid var(--ml-accent600);
 }
 
-.Bd1\;s\;\$accent200_fw:focus-within {
-  border: 1px solid var(--ml-accent200);
+.Bdc-\$accent200_fw:focus-within {
+  border-color: var(--ml-accent200);
 }
 
 .C-\$accent600 {
@@ -683,42 +662,18 @@ div {
   color: var(--ml-accent200);
 }
 
-.Ol-n {
+.Ol-n_f:focus {
   outline: none;
+}
+
+.-Ctx:focus-within .\^\:fw\:_C-\$accent900 {
+  color: var(--ml-accent900);
+}
+
+.Txw-w {
+  text-wrap: wrap;
 }
 
 .Rs-n {
   resize: none;
-}
-
-.Fi-\$accent200_h\:\:svg:hover svg {
-  fill: var(--ml-accent200);
-}
-
-.Jc-sb {
-  justify-content: space-between;
-}
-
-.Bgc-\$accent600_h:hover {
-  background-color: var(--ml-accent600);
-}
-
-.P2u\;5u {
-  padding: 0.5rem 1.25rem;
-}
-
-.Fns5u {
-  font-size: 1.25rem;
-}
-
-.Fi-\$accent600 {
-  fill: var(--ml-accent600);
-}
-
-.Tsd-ih {
-  transition-duration: inherit;
-}
-
-.Mb5u_\:div div {
-  margin-bottom: 1.25rem;
 }
