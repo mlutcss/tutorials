@@ -1,23 +1,4 @@
 /*
-CSS variables
-
-Global CSS custom properties which used in mlut.
-
---ml-gg = 0.75rem - [grid gutter](section-concepts.html#kssref-concepts-custom_unit-gg).
---ml-gscc = 12 - number of columns in the grid system. Sets by [$gs-columns](section-settings.html#kssref-settings-gs). Available only with `$legacy-grid-system` flag enabled
-
-Styleguide: css_lib.styles.css_vars
-*/
-:root {
-  --ml-gg: 0.75rem;
-}
-@media (min-width: 992px) {
-  :root {
-    --ml-gg: 1rem;
-  }
-}
-
-/*
 Generic
 
 Generic CSS that contains `box-sizing`, reset, browser bugs fixes etc. You can configure it with settings.
@@ -25,9 +6,6 @@ Generic CSS that contains `box-sizing`, reset, browser bugs fixes etc. You can c
 Styleguide: css_lib.styles.generic
 */
 /*! purgecss start ignore */
-html {
-  -webkit-text-size-adjust: 100%;
-}
 
 html {
   box-sizing: border-box;
@@ -37,162 +15,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-body {
-  margin: 0px;
-}
-
-main {
-  display: block;
-}
-
-/*
-1. Add the correct height in Firefox.
-2. Show the overflow in IE
-3. Correct the inheritance of border color in Firefox
-*/
-hr {
-  height: 0;
-  overflow: visible;
-  color: inherit;
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-code,
-kbd,
-samp,
-pre {
-  font-family: monospace, monospace;
-}
-
-abbr[title] {
-  text-decoration: underline dotted;
-}
-
-sub,
-sup {
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-  top: -0.4em;
-}
-
-sub {
-  top: 0.3em;
-}
-
-/**
-1. Remove text indentation from table contents in Chrome and Safari
-2. Correct table border color inheritance in all Chrome and Safari
-*/
-table {
-  text-indent: 0;
-  border-color: inherit;
-}
-
-img, svg, video, canvas, audio, iframe, embed, object {
-  vertical-align: bottom;
-}
-
-source {
-  display: none;
-}
-
-img,
-svg,
-canvas,
-video {
-  max-width: 100%;
-  height: auto;
-}
-
-[hidden],
-template {
-  display: none;
-}
-
-legend {
-  display: table;
-  max-width: 100%;
-  white-space: normal;
-}
-
-summary {
-  display: list-item;
-}
-
-progress {
-  vertical-align: baseline;
-}
-
-/**
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-*/
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0;
-}
-
-button {
-  text-transform: none;
-}
-
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
-/*
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-[type=search] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-}
-
-textarea {
-  overflow: auto;
-}
-
-::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-:-moz-ui-invalid {
-  box-shadow: none;
-}
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
-}
-
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to 'inherit' in Safari.
-*/
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
 }
 
 /*! purgecss end ignore */
@@ -216,58 +38,6 @@ Styleguide: css_lib.helpers.btn
   background: none;
   border: 0;
   cursor: pointer;
-}
-
-/*
-Wrapper
-
-The helper-container for the main content of the page. The maximum width is set in the [settings](section-settings.html#kssref-settings-general). The default is `1200px`.
-
-The container has sides `padding` that equal to gutters so that the content does not stick to sides on small screens. On wide screens the container is centered.
-
-Markup: ../../../docs/examples/css_lib-helpers/wrapper/wrapper.html
-
-Styleguide: css_lib.helpers.wrapper
-*/
-.wrapper {
-  display: block;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.wrapper {
-  padding-right: calc(var(--ml-gg) * 1);
-  padding-left: calc(var(--ml-gg) * 1);
-}
-
-/*
-Ratio-box
-
-Helper for creating containers, with proportional width and height. Implemented using a pseudo-element with a `padding-bottom` in %.
-
-The default aspect ratio is 16:9.
-
-.Pt75p_b - 4:3 aspect ratio.
-.Pt100p_b - 1:1 aspect ratio.
-
-Markup: ../../../docs/examples/css_lib-helpers/ratio-block/ratio-block.hbs
-
-Styleguide: css_lib.helpers.ratio-box
-*/
-.ratio-box {
-  position: relative;
-}
-.ratio-box::before {
-  display: block;
-  width: 100%;
-  padding-top: 56.25%;
-  content: "";
-}
-.ratio-box > :first-child {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
 }
 
 html {
@@ -297,12 +67,12 @@ div {
   color: var(--ml-accent900);
 }
 
-.Fnf-mUss {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 .-HeaderH13u {
   --ml-headerH: 3.25rem;
+}
+
+.M0 {
+  margin: 0px;
 }
 
 .Ps-a {
@@ -357,41 +127,12 @@ div {
   top: 5%;
 }
 
-.Bdrd5u {
-  border-radius: 1.25rem;
-}
-
-.Ovy-s {
-  overflow-y: scroll;
-}
-
 .P0\;0\;5u {
   padding: 0px 0px 1.25rem;
 }
 
-.P2u\;3u {
-  padding: 0.5rem 0.75rem;
-}
-
-.H-\$headerH {
-  height: var(--ml-headerH);
-}
-
-.Ps-f {
-  position: fixed;
-}
-
-.Bgc\#000\*50p {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.-Bdtrd5u {
-  border-top-right-radius: 1.25rem;
-  border-top-left-radius: 1.25rem;
-}
-
-.Zi20 {
-  z-index: 20;
+.H-\$headerHMxw600 {
+  height: var(--ml-headerHMxw600);
 }
 
 .Ai-str {
@@ -419,12 +160,16 @@ div {
   border: none;
 }
 
-.Bgc-tp {
-  background-color: transparent;
+.Fnf-ih {
+  font-family: inherit;
 }
 
-.Bgc-\$secondary900_h:hover {
-  background-color: var(--ml-secondary900);
+.Fns100p {
+  font-size: 100%;
+}
+
+.Bgc-tp {
+  background-color: transparent;
 }
 
 .Apcr1 {
@@ -433,15 +178,6 @@ div {
 
 .D {
   display: block;
-}
-
-.Bdrd100p {
-  border-radius: 100%;
-}
-
-.-Ts {
-  transition-duration: 0.3s;
-  transition-property: background-color, border-color, color, fill, stroke, backdrop-filter, box-shadow, filter, opacity, transform;
 }
 
 .-Sz26 {
@@ -453,12 +189,8 @@ div {
   user-select: none;
 }
 
-.Fnw700 {
-  font-weight: 700;
-}
-
-.Fns6u {
-  font-size: 1.5rem;
+.Va-b {
+  vertical-align: bottom;
 }
 
 .P0\.5u\;0 {
@@ -469,28 +201,8 @@ div {
   margin-left: auto;
 }
 
-.Bgc-\$accent900 {
-  background-color: var(--ml-accent900);
-}
-
-.Bgc-\$secondary850_h:hover {
-  background-color: var(--ml-secondary850);
-}
-
 .C-\$accent850 {
   color: var(--ml-accent850);
-}
-
-.W18u {
-  width: 4.5rem;
-}
-
-.Bdrd10u {
-  border-radius: 2.5rem;
-}
-
-.Fnw600 {
-  font-weight: 600;
 }
 
 .Lnh100p {
@@ -517,10 +229,6 @@ div {
   overflow: hidden;
 }
 
-.Mb20u {
-  margin-bottom: 5rem;
-}
-
 .P0\;1 {
   padding: 0px 1px;
 }
@@ -537,121 +245,37 @@ div {
   left: 0px;
 }
 
-.Gap5u {
-  gap: 1.25rem;
-}
-
-.Bgc-\$secondary200_h:hover {
-  background-color: var(--ml-secondary200);
-}
-
 .Bgc-\$secondary400 {
   background-color: var(--ml-secondary400);
 }
 
-.Bgc-\$secondary300_h:hover {
-  background-color: var(--ml-secondary300);
+.Bdrd100p {
+  border-radius: 100%;
 }
 
 .P2u {
   padding: 0.5rem;
 }
 
-.O0 {
-  opacity: 0;
-}
-
-.-Ctx-wallpaper:hover .\^wallpaper\:h\:_O1 {
-  opacity: 1;
-}
-
-.Zi10 {
-  z-index: 10;
-}
-
 .H30u {
   height: 7.5rem;
 }
 
-.D-ib {
-  display: inline-block;
-}
-
-.Bd2\;s\;black {
-  border: 2px solid black;
-}
-
-.T38u {
-  top: 9.5rem;
-}
-
-.L5u {
-  left: 1.25rem;
+.Mxw100p {
+  max-width: 100%;
 }
 
 .Bgc-\$secondary200 {
   background-color: var(--ml-secondary200);
 }
 
-.O1_h:hover {
-  opacity: 1;
-}
-
-.-Ts_\:input\,\:textarea input, .-Ts_\:input\,\:textarea textarea {
+.-Ts {
   transition-duration: 0.3s;
   transition-property: background-color, border-color, color, fill, stroke, backdrop-filter, box-shadow, filter, opacity, transform;
 }
 
-.C-\$accent500_\:input\,\:textarea input, .C-\$accent500_\:input\,\:textarea textarea {
-  color: var(--ml-accent500);
-}
-
-.Mb5u {
-  margin-bottom: 1.25rem;
-}
-
-.P0\;5u {
-  padding: 0px 1.25rem;
-}
-
 .Bd1\;s\;\$accent600 {
   border: 1px solid var(--ml-accent600);
-}
-
-.Bdc-\$accent200_fw:focus-within {
-  border-color: var(--ml-accent200);
-}
-
-.C-\$accent600 {
-  color: var(--ml-accent600);
-}
-
-.Bdrd2u {
-  border-radius: 0.5rem;
-}
-
-.Ct-\'\;\'\;\'\*\'_af::after {
-  content: ' ' '*';
-}
-
-.C-\$accent300_fw\:af:focus-within::after {
-  color: var(--ml-accent300);
-}
-
-.Ps-a_af::after {
-  position: absolute;
-}
-
-.T2u_af::after {
-  top: 0.5rem;
-}
-
-.R2u_af::after {
-  right: 0.5rem;
-}
-
-.Bdc-\$accent400_\!fw\:h:not(:focus-within):hover {
-  border-color: var(--ml-accent400);
 }
 
 .Mb1u {
@@ -660,24 +284,4 @@ div {
 
 .-Ctx:focus-within .\^\:fw\:_C-\$accent200 {
   color: var(--ml-accent200);
-}
-
-.Ol-n_f:focus {
-  outline: none;
-}
-
-.-Ctx:focus-within .\^\:fw\:_C-\$accent900 {
-  color: var(--ml-accent900);
-}
-
-.Txw-w {
-  text-wrap: wrap;
-}
-
-.Rs-n {
-  resize: none;
-}
-
-.H-\$headerHMxw600 {
-  height: var(--ml-headerHMxw600);
 }
