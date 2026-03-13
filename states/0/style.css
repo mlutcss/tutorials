@@ -1,24 +1,4 @@
 /*
-Generic
-
-Generic CSS that contains `box-sizing`, reset, browser bugs fixes etc. You can configure it with settings.
-
-Styleguide: css_lib.styles.generic
-*/
-/*! purgecss start ignore */
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/*! purgecss end ignore */
-/*
 Btn
 
 Helper for creating buttons. Prepares any element to styling as a button.
@@ -41,6 +21,7 @@ Styleguide: css_lib.helpers.btn
 }
 
 html {
+  box-sizing: border-box;
   --ml-accent500: rgba(231, 233, 234, 0.5);
   --ml-accent900: #e7e9ea;
   --ml-accent850: #0f1419;
@@ -53,6 +34,20 @@ html {
   --ml-secondary400: rgba(0,0,0,0.40);
   --ml-secondary300: rgba(0,0,0,0.20);
   --ml-secondary200: rgba(0,0,0,0.10);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
 }
 
 div {

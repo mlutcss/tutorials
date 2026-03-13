@@ -1,3 +1,37 @@
 @use '@mlut/core/tools';
 @use '@mlut/core/dist/sass/css/helpers/btn';
 @use '@mlut/core/dist/sass/addons/demo-theme';
+
+html {
+	box-sizing: border-box;
+  --ml-accent500: rgba(231, 233, 234, 0.5);
+  --ml-accent900: #e7e9ea;
+  --ml-accent850: #0f1419;
+  --ml-accent600: #333639;
+  --ml-accent200: #1d9bf0;
+  --ml-accent300: #fa4646;
+  --ml-accent400: #6bc4ff;
+  --ml-secondary900: #4a4a4a;
+  --ml-secondary850: #bdbdbd;
+  --ml-secondary400: rgba(0,0,0,0.40);
+  --ml-secondary300: rgba(0,0,0,0.20);
+  --ml-secondary200: rgba(0,0,0,0.10);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+div {
+	scrollbar-width: none;
+}
