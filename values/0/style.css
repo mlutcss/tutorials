@@ -1,0 +1,331 @@
+/*
+CSS variables
+
+Global CSS custom properties which used in mlut.
+
+--ml-gg = 0.75rem - [grid gutter](section-concepts.html#kssref-concepts-custom_unit-gg).
+--ml-gscc = 12 - number of columns in the grid system. Sets by [$gs-columns](section-settings.html#kssref-settings-gs). Available only with `$legacy-grid-system` flag enabled
+
+Styleguide: css_lib.styles.css_vars
+*/
+:root {
+  --ml-gg: 0.75rem;
+}
+@media (min-width: 992px) {
+  :root {
+    --ml-gg: 1rem;
+  }
+}
+
+/*
+Btn
+
+Helper for creating buttons. Prepares any element to styling as a button.
+
+Markup: ../../../docs/examples/css_lib-helpers/btn/btn.html
+
+Styleguide: css_lib.helpers.btn
+*/
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+html {
+  box-sizing: border-box;
+  --ml-accent500: rgba(231, 233, 234, 0.5);
+  --ml-accent900: #e7e9ea;
+  --ml-accent850: #0f1419;
+  --ml-accent600: #333639;
+  --ml-accent200: #1d9bf0;
+  --ml-accent300: #fa4646;
+  --ml-accent400: #6bc4ff;
+  --ml-secondary900: #4a4a4a;
+  --ml-secondary850: #bdbdbd;
+  --ml-secondary400: rgba(0,0,0,0.40);
+  --ml-secondary300: rgba(0,0,0,0.20);
+  --ml-secondary200: rgba(0,0,0,0.10);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+div {
+  scrollbar-width: none;
+}
+
+.Bgc-white {
+  background-color: white;
+}
+
+.C-\$accent900 {
+  color: var(--ml-accent900);
+}
+
+.Fnf-mUss {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.-HeaderH13u {
+  --ml-headerH: 3.25rem;
+}
+
+.M0 {
+  margin: 0px;
+}
+
+.Ps-a {
+  position: absolute;
+}
+
+.W100p {
+  width: 100%;
+}
+
+.H100vh {
+  height: 100vh;
+}
+
+.Bgc-grey {
+  background-color: grey;
+}
+
+.D-f {
+  display: flex;
+}
+
+.Jc-c {
+  justify-content: center;
+}
+
+.Ai-c {
+  align-items: center;
+}
+
+.Mxw38gg {
+  max-width: calc(var(--ml-gg) * 38);
+}
+
+.-Sz100p {
+  width: 100%;
+  height: 100%;
+}
+
+.Bgc-black {
+  background-color: black;
+}
+
+.Ovy-s {
+  overflow-y: scroll;
+}
+
+.P0\;0\;5u {
+  padding: 0px 0px 1.25rem;
+}
+
+.Ctnn-form {
+  container-name: form;
+}
+
+.Ctnt-is {
+  container-type: inline-size;
+}
+
+.H-\$headerH {
+  height: var(--ml-headerH);
+}
+
+.Ps-f {
+  position: fixed;
+}
+
+.Bgc\#000\*0\.5 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Zi20 {
+  z-index: 20;
+}
+
+.Ai-str {
+  align-items: stretch;
+}
+
+.Jc-fs {
+  justify-content: flex-start;
+}
+
+.W10p {
+  width: 10%;
+}
+
+.Bd-n {
+  border: none;
+}
+
+.-Sz26 {
+  width: 26px;
+  height: 26px;
+}
+
+.Us-n {
+  user-select: none;
+}
+
+.Va-b {
+  vertical-align: bottom;
+}
+
+.W90p {
+  width: 90%;
+}
+
+.H100p {
+  height: 100%;
+}
+
+.-Sz24 {
+  width: 24px;
+  height: 24px;
+}
+
+.P0 {
+  padding: 0px;
+}
+
+.Mt-\$headerH {
+  margin-top: var(--ml-headerH);
+}
+
+.Ps {
+  position: relative;
+}
+
+.D {
+  display: block;
+}
+
+.P0\;1 {
+  padding: 0px 1px;
+}
+
+.H10p {
+  height: 10%;
+}
+
+.D-ib {
+  display: inline-block;
+}
+
+.W25u {
+  width: 6.25rem;
+}
+
+.Apcr1 {
+  aspect-ratio: 1;
+}
+
+.Mxw100p {
+  max-width: 100%;
+}
+
+.P0\.5u\;0 {
+  padding: 0.125rem 0px;
+}
+
+.C-ih {
+  color: inherit;
+}
+
+.P2u\;4u {
+  padding: 0.5rem 1rem;
+}
+
+.Bdrd10u {
+  border-radius: 2.5rem;
+}
+
+.Fnw600 {
+  font-weight: 600;
+}
+
+.Tsp-bgc {
+  transition-property: background-color;
+}
+
+.-Ts {
+  transition-duration: 0.3s;
+  transition-property: background-color, border-color, color, fill, stroke, backdrop-filter, box-shadow, filter, opacity, transform;
+}
+
+.Lnh100p {
+  line-height: 100%;
+}
+
+.Fnw700 {
+  font-weight: 700;
+}
+
+.Fns5u {
+  font-size: 1.25rem;
+}
+
+.Fns4u {
+  font-size: 1rem;
+}
+
+.Gap4u {
+  gap: 1rem;
+}
+
+.M0\;0\;2u {
+  margin: 0px 0px 0.5rem;
+}
+
+.Gap1u {
+  gap: 0.25rem;
+}
+
+.-Sz20 {
+  width: 20px;
+  height: 20px;
+}
+
+.Fns100p {
+  font-size: 100%;
+}
+
+.-Sz23 {
+  width: 23px;
+  height: 23px;
+}
+
+@media (min-width: 768px) {
+  .md_W40u {
+    width: 10rem;
+  }
+}
+@media (min-width: 768px) {
+  .md_Fns5u {
+    font-size: 1.25rem;
+  }
+}
