@@ -1,4 +1,23 @@
 /*
+CSS variables
+
+Global CSS custom properties which used in mlut.
+
+--ml-gg = 0.75rem - [grid gutter](section-concepts.html#kssref-concepts-custom_unit-gg).
+--ml-gscc = 12 - number of columns in the grid system. Sets by [$gs-columns](section-settings.html#kssref-settings-gs). Available only with `$legacy-grid-system` flag enabled
+
+Styleguide: css_lib.styles.css_vars
+*/
+:root {
+  --ml-gg: 0.75rem;
+}
+@media (min-width: 992px) {
+  :root {
+    --ml-gg: 1rem;
+  }
+}
+
+/*
 Btn
 
 Helper for creating buttons. Prepares any element to styling as a button.
@@ -51,7 +70,8 @@ textarea {
 }
 
 div {
-  scrollbar-width: none;
+  scrollbar-width: auto;
+  scrollbar-color: #3e4144 #16181c;
 }
 
 .Bgc-white {
@@ -271,4 +291,16 @@ div {
 
 .-Ctx:focus-within .\^\:fw\:_C-\$accent200 {
   color: var(--ml-accent200);
+}
+
+.W38gg {
+  width: calc(var(--ml-gg) * 38);
+}
+
+.H170u {
+  height: 42.5rem;
+}
+
+.H-\$headerH {
+  height: var(--ml-headerH);
 }

@@ -10,114 +10,117 @@
 
 	<div class="Ps-a W100p H100vh Bgc-grey D-f Jc-c Ai-c">
 
-		<div class="Ps-a Mxw600 W90p H160u Mxh90vh Bgc-black T5p P0;0;5u">
-			<!-- Header -->
+		<div class="Ps-a W38gg H170u Mxh90vh">
 
-			<header class=" H-$headerHMxw600 W90p">
-				<div class="D-f Ai-str Jc-fs -Sz100p">
+			<div class="Bgc-black P0;0;5u">
+				<!-- Header -->
 
-          <!-- Close button-->
-					<div class="W10p H100p ">
-						<button class="Bd-n C-$accent900 Bgc-tp H100p Apcr1 D">
-							<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b">
-								<use href="img/sprite.svg#cross"></use>
-							</svg>
-						</button>
+				<header class="H-$headerH W100p">
+					<div class="D-f Ai-str Jc-fs -Sz100p">
+
+						<!-- Close button-->
+						<div class="W10p H100p">
+							<button class="Bd-n C-$accent900 Bgc-tp H100p Apcr1 D">
+								<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b">
+									<use href="img/sprite.svg#cross"></use>
+								</svg>
+							</button>
+						</div>
+
+						<!-- Caption-->
+						<div class="W90p H100p D-f Ai-c">
+							<span> Edit profile</span>
+						</div>
+
+						<div class="H100p P0.5u;0">
+							<!-- Save button -->
+							<button class="Ml-a D-f Ai-c Jc-c C-$accent850">
+								<span class="Lnh100p"> Save </span>
+							</button>
+						</div>
+					</div>
+				</header>
+
+				<!-- Form's main part -->
+
+				<main class="P0 Ps">
+
+					<!-- Profile wallpaper-->
+					<div class="H50u Ov-h Ps">
+						<!-- Wallpaper-->
+						<img src="img/wallpaper.jpg" class="D P0;1 W100p Ps" alt="wallpaper">
+						<div class="Ps-a Zi2 T0 L0 -Sz100p D-f Jc-c Ai-c Bgc-$secondary400">
+
+							<!-- Change wallpaper button-->
+							<button class="btn Bgc-$secondary400 Bdrd100p P2u">
+								<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b" >
+									<use href="img/sprite.svg#photo"></use>
+								</svg>
+							</button>
+
+							<!-- Delete wallpaper button -->
+							<button class="btn Bgc-$secondary400 Bdrd100p P2u">
+								<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b" >
+									<use href="img/sprite.svg#cross"></use>
+								</svg>
+							</button>
+
+						</div>
 					</div>
 
-					<!-- Caption-->
-					<div class="W90p H100p D-f Ai-c">
-						<span> Edit profile</span>
+					<div class="Ps H30u Bdrd100p Apcr1">
+						<!-- Profile photo-->
+						<img src="img/json.jpg" class="D Bdrd100p Mxw100p" alt="profile-photo">
+
+						<div class="Ps-a T0 L0 -Sz100p Bdrd100p D-f Jc-c Ai-c Bgc-$secondary200 ">
+							<!-- Change profile photo button-->
+							<button class="btn Bgc-$secondary400 -Ts Bdrd100p P2u">
+								<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b">
+									<use href="img/sprite.svg#photo"></use>
+								</svg>
+							</button>
+						</div>
 					</div>
 
-					<div class="H100p P0.5u;0">
-						<!-- Save button -->
-						<button class="Ml-a D-f Ai-c Jc-c C-$accent850 ">
-							<span class="Lnh100p"> Save </span>
-						</button>
-					</div>
-				</div>
-			</header>
+					<!-- The part with the inputs -->
+					<div>
 
-			<!-- Form's main part -->
+						<!-- Name -->
+						<div>
+							<label class="D Ps Bd1;s;$accent600 ">
+								<span class="D">Name</span>
+								<input maxlength="50" class="D W100p Bgc-tp" type="text" value="Json Statement">
+							</label>
+						</div>
 
-			<main class="P0 Ps">
+						<!-- Bio-->
+						<div>
+							<label>
+								<span class="D">Bio</span>
 
-				<!-- Profile wallpaper-->
-				<div class="Mt-$headerH H50u Ov-h Ps">
-					<!-- Wallpaper-->
-					<img src="img/wallpaper.jpg" class="D P0;1 W100p Ps" alt="wallpaper">
-					<div class="Ps-a Zi2 T0 L0 -Sz100p D-f Jc-c Ai-c Bgc-$secondary400">
+								<textarea class="D W100p Bgc-tp" type="text">A professional Frontend dev and killer-feature maker with 20 years of experience</textarea>
+							</label>
+						</div>
 
-						<!-- Change wallpaper button-->
-						<button class="btn Bgc-$secondary400 Bdrd100p P2u">
-							<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b" >
-								<use href="img/sprite.svg#photo"></use>
-							</svg>
-						</button>
+						<!-- Location -->
+						<div>
+							<label class="D Bd1;s;$accent600 ">
+								<span class="D">Location</span>
+								<input maxlength="100" class="D W100p Bgc-tp" type="text" value="Planet Earth">
+							</label>
+						</div>
 
-						<!-- Delete wallpaper button -->
-						<button class="btn Bgc-$secondary400 Bdrd100p P2u">
-							<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b" >
-								<use href="img/sprite.svg#cross"></use>
-							</svg>
-						</button>
-
-					</div>
-				</div>
-
-				<div class="Ps H30u Bdrd100p Apcr1">
-					<!-- Profile photo-->
-					<img src="img/json.jpg" class="D Bdrd100p Mxw100p" alt="profile-photo">
-
-					<div class="Ps-a T0 L0 -Sz100p Bdrd100p D-f Jc-c Ai-c Bgc-$secondary200 ">
-						<!-- Change profile photo button-->
-						<button class="btn Bgc-$secondary400 -Ts Bdrd100p P2u">
-							<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b">
-								<use href="img/sprite.svg#photo"></use>
-							</svg>
-						</button>
-					</div>
-				</div>
-
-				<!-- The part with the inputs -->
-				<div class="">
-
-					<!-- Name -->
-					<div class="">
-						<label class="D Ps Bd1;s;$accent600 ">
-							<span class="D">Name</span>
-							<input maxlength="50" class="D W100p Bgc-tp" type="text" value="Json Statement">
-						</label>
+						<!-- Website -->
+						<div>
+							<label class="D">
+								<span class="D Mb1u ^:fw:_C-$accent200 -Ts">Website</span>
+								<input maxlength="100" class="D W100p Bgc-tp" type="text" value="https://mlut.style/">
+							</label>
+						</div>
 					</div>
 
-					<!-- Bio-->
-					<div class="">
-						<label  class="">
-							<span class="D">Bio</span>
-
-							<textarea class="D W100p Bgc-tp" type="text">A professional Frontend dev and killer-feature maker with 20 years of experience</textarea>
-						</label>
-					</div>
-
-					<!-- Location -->
-					<div class="">
-						<label class="D Bd1;s;$accent600 ">
-							<span class="D">Location</span>
-							<input maxlength="100" class="D W100p Bgc-tp" type="text" value="Planet Earth">
-						</label>
-					</div>
-
-					<!-- Website -->
-					<div class="">
-						<label class="D">
-							<span class="D Mb1u ^:fw:_C-$accent200 -Ts">Website</span>
-							<input maxlength="100" class="D W100p Bgc-tp" type="text" value="https://mlut.style/">
-						</label>
-					</div>
-				</div>
-
-			</main>
+				</main>
+			</div>
 		</div>
 	</div>
 </body>

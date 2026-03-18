@@ -1,4 +1,23 @@
 /*
+CSS variables
+
+Global CSS custom properties which used in mlut.
+
+--ml-gg = 0.75rem - [grid gutter](section-concepts.html#kssref-concepts-custom_unit-gg).
+--ml-gscc = 12 - number of columns in the grid system. Sets by [$gs-columns](section-settings.html#kssref-settings-gs). Available only with `$legacy-grid-system` flag enabled
+
+Styleguide: css_lib.styles.css_vars
+*/
+:root {
+  --ml-gg: 0.75rem;
+}
+@media (min-width: 992px) {
+  :root {
+    --ml-gg: 1rem;
+  }
+}
+
+/*
 Btn
 
 Helper for creating buttons. Prepares any element to styling as a button.
@@ -51,7 +70,8 @@ textarea {
 }
 
 div {
-  scrollbar-width: none;
+  scrollbar-width: auto;
+  scrollbar-color: #3e4144 #16181c;
 }
 
 .Bgc-white {
@@ -102,32 +122,41 @@ div {
   align-items: center;
 }
 
-.Mxw600 {
-  max-width: 600px;
+.W38gg {
+  width: calc(var(--ml-gg) * 38);
 }
 
-.W90p {
-  width: 90%;
-}
-
-.H160u {
-  height: 40rem;
+.H170u {
+  height: 42.5rem;
 }
 
 .Mxh90vh {
   max-height: 90vh;
 }
 
+.Bdrd3u {
+  border-radius: 0.75rem;
+}
+
+.Ov-h {
+  overflow: hidden;
+}
+
+.-Sz100p {
+  width: 100%;
+  height: 100%;
+}
+
 .Bgc-black {
   background-color: black;
 }
 
-.T5p {
-  top: 5%;
+.Bdtlr3u {
+  border-top-left-radius: 0.75rem;
 }
 
-.Bdrd5u {
-  border-radius: 1.25rem;
+.Bdblr3u {
+  border-bottom-left-radius: 0.75rem;
 }
 
 .Ovy-s {
@@ -138,6 +167,10 @@ div {
   padding: 0px 0px 1.25rem;
 }
 
+.Ps {
+  position: relative;
+}
+
 .P2u\;3u {
   padding: 0.5rem 0.75rem;
 }
@@ -146,17 +179,16 @@ div {
   height: var(--ml-headerH);
 }
 
-.Ps-f {
-  position: fixed;
+.Ps-sk {
+  position: sticky;
+}
+
+.T0 {
+  top: 0px;
 }
 
 .Bgc\#000\*50p {
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.-Bdtrd5u {
-  border-top-right-radius: 1.25rem;
-  border-top-left-radius: 1.25rem;
 }
 
 .Zi20 {
@@ -169,11 +201,6 @@ div {
 
 .Jc-fs {
   justify-content: flex-start;
-}
-
-.-Sz100p {
-  width: 100%;
-  height: 100%;
 }
 
 .W10p {
@@ -226,6 +253,10 @@ div {
   vertical-align: bottom;
 }
 
+.W90p {
+  width: 90%;
+}
+
 .Fnw700 {
   font-weight: 700;
 }
@@ -274,20 +305,8 @@ div {
   padding: 0px;
 }
 
-.Ps {
-  position: relative;
-}
-
-.Mt-\$headerH {
-  margin-top: var(--ml-headerH);
-}
-
 .H50u {
   height: 12.5rem;
-}
-
-.Ov-h {
-  overflow: hidden;
 }
 
 .Mb20u {
@@ -300,10 +319,6 @@ div {
 
 .Zi2 {
   z-index: 2;
-}
-
-.T0 {
-  top: 0px;
 }
 
 .L0 {

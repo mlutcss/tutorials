@@ -10,114 +10,117 @@
 
 	<div class="Ps-a W100p H100vh Bgc-grey D-f Jc-c Ai-c">
 
-		<div class="Ps-a Mxw600 W90p H160u Mxh90vh Bgc-black T5p Bdrd5u Ovy-s P0;0;5u">
-			<!-- Header -->
+		<div class="Ps-a W38gg H170u Mxh90vh Bdrd3u Ov-h">
 
-			<header class="P2u;3u H-$headerH Ps-f Mxw600 W90p Bgc#000*50p -Bdtrd5u Zi20">
-				<div class="D-f Ai-str Jc-fs -Sz100p">
+			<div class="-Sz100p Bgc-black Bdtlr3u Bdblr3u Ovy-s P0;0;5u Ps">
+				<!-- Header -->
 
-          <!-- Close button-->
-					<div class="W10p H100p ">
-						<button class="btn Bd-n C-$accent900 Bgc-tp Bgc-$secondary900_h H100p Apcr1 D Bdrd100p -Ts">
-							<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b">
-								<use href="img/sprite.svg#cross"></use>
-							</svg>
-						</button>
+				<header class="P2u;3u H-$headerH Ps-sk T0 W100p Bgc#000*50p Bdtlr3u Zi20">
+					<div class="D-f Ai-str Jc-fs -Sz100p">
+
+						<!-- Close button-->
+						<div class="W10p H100p ">
+							<button class="btn Bd-n C-$accent900 Bgc-tp Bgc-$secondary900_h H100p Apcr1 D Bdrd100p -Ts">
+								<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b">
+									<use href="img/sprite.svg#cross"></use>
+								</svg>
+							</button>
+						</div>
+
+						<!-- Caption-->
+						<div class="W90p H100p Fnw700 Fns6u D-f Ai-c">
+							<span> Edit profile</span>
+						</div>
+
+						<div class="H100p P0.5u;0">
+							<!-- Save button -->
+							<button class="btn Ml-a Bgc-$accent900 Bgc-$secondary850_h D-f Ai-c Jc-c C-$accent850 H100p W18u Bdrd10u Fnw600 -Ts ">
+								<span class="Lnh100p"> Save </span>
+							</button>
+						</div>
+					</div>
+				</header>
+
+				<!-- Form's main part -->
+
+				<main class="P0 Ps">
+
+					<!-- Profile wallpaper-->
+					<div class="H50u Ov-h Ps D-f Jc-c Ai-c Mb20u">
+						<!-- Wallpaper-->
+						<img src="img/wallpaper.jpg" class="D P0;1 W100p Ps" alt="wallpaper">
+						<div class="Ps-a Zi2 T0 L0 -Sz100p D-f Jc-c Ai-c Gap5u Bgc-$secondary200_h Bgc-$secondary400 -Ts -Ctx-wallpaper">
+
+							<!-- Change wallpaper button-->
+							<button class="btn Bgc-$secondary400 C-$accent900 Bgc-$secondary300_h -Ts Bdrd100p P2u O0 ^wallpaper:h:_O1">
+								<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b" >
+									<use href="img/sprite.svg#photo"></use>
+								</svg>
+							</button>
+
+							<!-- Delete wallpaper button -->
+							<button class="btn Bgc-$secondary400 C-$accent900 Bgc-$secondary300_h -Ts Bdrd100p P2u O0 ^wallpaper:h:_O1">
+								<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b" >
+									<use href="img/sprite.svg#cross"></use>
+								</svg>
+							</button>
+
+						</div>
 					</div>
 
-					<!-- Caption-->
-					<div class="W90p H100p Fnw700 Fns6u D-f Ai-c">
-						<span> Edit profile</span>
+					<div class="Ps-a Zi10 H30u D-ib Bd2;s;black Bdrd100p Apcr1 T38u L5u">
+						<!-- Profile photo-->
+						<img src="img/json.jpg" class="D Bdrd100p Mxw100p" alt="profile-photo">
+
+						<div class="Ps-a T0 L0 -Sz100p Bdrd100p D-f Jc-c Ai-c Bgc-$secondary200 O0 O1_h -Ts">
+							<!-- Change profile photo button-->
+							<button class="btn Bgc-$secondary400 C-$accent900 Bgc-$secondary300_h -Ts Bdrd100p P2u">
+								<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b">
+									<use href="img/sprite.svg#photo"></use>
+								</svg>
+							</button>
+						</div>
 					</div>
 
-					<div class="H100p P0.5u;0">
-						<!-- Save button -->
-						<button class="btn Ml-a Bgc-$accent900 Bgc-$secondary850_h D-f Ai-c Jc-c C-$accent850 H100p W18u Bdrd10u Fnw600 -Ts ">
-							<span class="Lnh100p"> Save </span>
-						</button>
-					</div>
-				</div>
-			</header>
+					<!-- The part with the inputs -->
+					<div class="-Ts_:input,:textarea C-$accent500_:input,:textarea">
 
-			<!-- Form's main part -->
+						<!-- Name -->
+						<div class="Mb5u P0;5u">
+							<label class="D Ps Bd1;s;$accent600 Bdc-$accent200_fw C-$accent600 Bdrd2u P2u -Ctx Ct-';';'*'_af C-$accent300_fw:af Ps-a_af T2u_af R2u_af Bdc-$accent400_!fw:h -Ts">
+								<span class="D Mb1u ^:fw:_C-$accent200 -Ts">Name</span>
+								<input maxlength="50" class="D W100p Bgc-tp Bd-n Ol-n_f ^:fw:_C-$accent900" type="text" value="Json Statement">
+							</label>
+						</div>
 
-			<main class="P0 Ps">
+						<!-- Bio-->
+						<div class="Mb5u P0;5u">
+							<label  class="D Bd1;s;$accent600 Bdc-$accent200_fw C-$accent600 Bdrd2u P2u -Ctx Bdc-$accent400_!fw:h -Ts">
+								<span class="D Mb1u ^:fw:_C-$accent200 -Ts">Bio</span>
 
-				<!-- Profile wallpaper-->
-				<div class="Mt-$headerH H50u Ov-h Ps D-f Jc-c Ai-c Mb20u">
-					<!-- Wallpaper-->
-					<img src="img/wallpaper.jpg" class="D P0;1 W100p Ps" alt="wallpaper">
-					<div class="Ps-a Zi2 T0 L0 -Sz100p D-f Jc-c Ai-c Gap5u Bgc-$secondary200_h Bgc-$secondary400 -Ts -Ctx-wallpaper">
+								<textarea class="D W100p Bgc-tp Bd-n Ol-n_f ^:fw:_C-$accent900 Txw-w Rs-n " type="text">A professional Frontend dev and killer-feature maker with 20 years of experience</textarea>
+							</label>
+						</div>
 
-						<!-- Change wallpaper button-->
-						<button class="btn Bgc-$secondary400 C-$accent900 Bgc-$secondary300_h -Ts Bdrd100p P2u O0 ^wallpaper:h:_O1">
-							<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b" >
-								<use href="img/sprite.svg#photo"></use>
-							</svg>
-						</button>
+						<!-- Location -->
+						<div class="Mb5u P0;5u">
+							<label class="D Bd1;s;$accent600 Bdc-$accent200_fw C-$accent600 Bdrd2u P2u -Ctx Bdc-$accent400_!fw:h -Ts">
+								<span class="D  Mb1u ^:fw:_C-$accent200 -Ts">Location</span>
+								<input maxlength="100" class="D W100p Bgc-tp Bd-n Ol-n_f ^:fw:_C-$accent900" type="text" value="Planet Earth">
+							</label>
+						</div>
 
-						<!-- Delete wallpaper button -->
-						<button class="btn Bgc-$secondary400 C-$accent900 Bgc-$secondary300_h -Ts Bdrd100p P2u O0 ^wallpaper:h:_O1">
-							<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b" >
-								<use href="img/sprite.svg#cross"></use>
-							</svg>
-						</button>
-
-					</div>
-				</div>
-
-				<div class="Ps-a Zi10 H30u D-ib Bd2;s;black Bdrd100p Apcr1 T38u L5u">
-					<!-- Profile photo-->
-					<img src="img/json.jpg" class="D Bdrd100p Mxw100p" alt="profile-photo">
-
-					<div class="Ps-a T0 L0 -Sz100p Bdrd100p D-f Jc-c Ai-c Bgc-$secondary200 O0 O1_h -Ts">
-						<!-- Change profile photo button-->
-						<button class="btn Bgc-$secondary400 C-$accent900 Bgc-$secondary300_h -Ts Bdrd100p P2u">
-							<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b">
-								<use href="img/sprite.svg#photo"></use>
-							</svg>
-						</button>
-					</div>
-				</div>
-
-				<!-- The part with the inputs -->
-				<div class="-Ts_:input,:textarea C-$accent500_:input,:textarea">
-
-					<!-- Name -->
-					<div class="Mb5u P0;5u">
-						<label class="D Ps Bd1;s;$accent600 Bdc-$accent200_fw C-$accent600 Bdrd2u P2u -Ctx Ct-';';'*'_af C-$accent300_fw:af Ps-a_af T2u_af R2u_af Bdc-$accent400_!fw:h -Ts">
-							<span class="D Mb1u ^:fw:_C-$accent200 -Ts">Name</span>
-							<input maxlength="50" class="D W100p Bgc-tp Bd-n Ol-n_f ^:fw:_C-$accent900" type="text" value="Json Statement">
-						</label>
+						<!-- Website -->
+						<div class="Mb5u P0;5u">
+							<label class="D Bd1;s;$accent600 Bdc-$accent200_fw C-$accent600 Bdrd2u P2u -Ctx Bdc-$accent400_!fw:h -Ts">
+								<span class="D Mb1u ^:fw:_C-$accent200 -Ts">Website</span>
+								<input maxlength="100" class="D W100p Bgc-tp Bd-n Ol-n_f ^:fw:_C-$accent900" type="text" value="https://mlut.style/">
+							</label>
+						</div>
 					</div>
 
-					<!-- Bio-->
-					<div class="Mb5u P0;5u">
-						<label  class="D Bd1;s;$accent600 Bdc-$accent200_fw C-$accent600 Bdrd2u P2u -Ctx Bdc-$accent400_!fw:h -Ts">
-							<span class="D Mb1u ^:fw:_C-$accent200 -Ts">Bio</span>
-
-							<textarea class="D W100p Bgc-tp Bd-n Ol-n_f ^:fw:_C-$accent900 Txw-w Rs-n " type="text">A professional Frontend dev and killer-feature maker with 20 years of experience</textarea>
-						</label>
-					</div>
-
-					<!-- Location -->
-					<div class="Mb5u P0;5u">
-						<label class="D Bd1;s;$accent600 Bdc-$accent200_fw C-$accent600 Bdrd2u P2u -Ctx Bdc-$accent400_!fw:h -Ts">
-							<span class="D  Mb1u ^:fw:_C-$accent200 -Ts">Location</span>
-							<input maxlength="100" class="D W100p Bgc-tp Bd-n Ol-n_f ^:fw:_C-$accent900" type="text" value="Planet Earth">
-						</label>
-					</div>
-
-					<!-- Website -->
-					<div class="Mb5u P0;5u">
-						<label class="D Bd1;s;$accent600 Bdc-$accent200_fw C-$accent600 Bdrd2u P2u -Ctx Bdc-$accent400_!fw:h -Ts">
-							<span class="D Mb1u ^:fw:_C-$accent200 -Ts">Website</span>
-							<input maxlength="100" class="D W100p Bgc-tp Bd-n Ol-n_f ^:fw:_C-$accent900" type="text" value="https://mlut.style/">
-						</label>
-					</div>
-				</div>
-
-			</main>
+				</main>
+			</div>
 		</div>
 	</div>
 </body>
