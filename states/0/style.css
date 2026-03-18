@@ -1,0 +1,266 @@
+/*
+CSS variables
+
+Global CSS custom properties which used in mlut.
+
+--ml-gg = 0.75rem - [grid gutter](section-concepts.html#kssref-concepts-custom_unit-gg).
+--ml-gscc = 12 - number of columns in the grid system. Sets by [$gs-columns](section-settings.html#kssref-settings-gs). Available only with `$legacy-grid-system` flag enabled
+
+Styleguide: css_lib.styles.css_vars
+*/
+:root {
+  --ml-gg: 0.75rem;
+}
+@media (min-width: 992px) {
+  :root {
+    --ml-gg: 1rem;
+  }
+}
+
+/*
+Btn
+
+Helper for creating buttons. Prepares any element to styling as a button.
+
+Markup: ../../../docs/examples/css_lib-helpers/btn/btn.html
+
+Styleguide: css_lib.helpers.btn
+*/
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+html {
+  --ml-accent500: rgba(231, 233, 234, 0.5);
+  --ml-accent900: #e7e9ea;
+  --ml-accent850: #0f1419;
+  --ml-accent600: #333639;
+  --ml-accent200: #1d9bf0;
+  --ml-accent300: #fa4646;
+  --ml-accent400: #6bc4ff;
+  --ml-secondary900: #4a4a4a;
+  --ml-secondary850: #bdbdbd;
+  --ml-secondary400: rgba(0,0,0,0.40);
+  --ml-secondary300: rgba(0,0,0,0.20);
+  --ml-secondary200: rgba(0,0,0,0.10);
+}
+
+.Bgc-white {
+  background-color: white;
+}
+
+.C-\$accent900 {
+  color: var(--ml-accent900);
+}
+
+.-HeaderH13u {
+  --ml-headerH: 3.25rem;
+}
+
+.M0 {
+  margin: 0px;
+}
+
+.Ps-a {
+  position: absolute;
+}
+
+.W100p {
+  width: 100%;
+}
+
+.H100vh {
+  height: 100vh;
+}
+
+.Bgc-grey {
+  background-color: grey;
+}
+
+.D-f {
+  display: flex;
+}
+
+.Jc-c {
+  justify-content: center;
+}
+
+.Ai-c {
+  align-items: center;
+}
+
+.W38gg {
+  width: calc(var(--ml-gg) * 38);
+}
+
+.H170u {
+  height: 42.5rem;
+}
+
+.Mxh90vh {
+  max-height: 90vh;
+}
+
+.Bgc-black {
+  background-color: black;
+}
+
+.P0\;0\;5u {
+  padding: 0px 0px 1.25rem;
+}
+
+.H-\$headerH {
+  height: var(--ml-headerH);
+}
+
+.Ai-str {
+  align-items: stretch;
+}
+
+.Jc-fs {
+  justify-content: flex-start;
+}
+
+.-Sz100p {
+  width: 100%;
+  height: 100%;
+}
+
+.W10p {
+  width: 10%;
+}
+
+.H100p {
+  height: 100%;
+}
+
+.Bd-n {
+  border: none;
+}
+
+.Bgc-tp {
+  background-color: transparent;
+}
+
+.Apcr1 {
+  aspect-ratio: 1;
+}
+
+.D {
+  display: block;
+}
+
+.-Sz26 {
+  width: 26px;
+  height: 26px;
+}
+
+.Us-n {
+  user-select: none;
+}
+
+.Va-b {
+  vertical-align: bottom;
+}
+
+.W90p {
+  width: 90%;
+}
+
+.P0\.5u\;0 {
+  padding: 0.125rem 0px;
+}
+
+.Ml-a {
+  margin-left: auto;
+}
+
+.C-\$accent850 {
+  color: var(--ml-accent850);
+}
+
+.Lnh100p {
+  line-height: 100%;
+}
+
+.P0 {
+  padding: 0px;
+}
+
+.Ps {
+  position: relative;
+}
+
+.H50u {
+  height: 12.5rem;
+}
+
+.Ov-h {
+  overflow: hidden;
+}
+
+.P0\;1 {
+  padding: 0px 1px;
+}
+
+.Zi2 {
+  z-index: 2;
+}
+
+.T0 {
+  top: 0px;
+}
+
+.L0 {
+  left: 0px;
+}
+
+.Bgc-\$secondary400 {
+  background-color: var(--ml-secondary400);
+}
+
+.Bdrd100p {
+  border-radius: 100%;
+}
+
+.P2u {
+  padding: 0.5rem;
+}
+
+.H30u {
+  height: 7.5rem;
+}
+
+.Mxw100p {
+  max-width: 100%;
+}
+
+.Bgc-\$secondary200 {
+  background-color: var(--ml-secondary200);
+}
+
+.-Ts {
+  transition-duration: 0.3s;
+  transition-property: background-color, border-color, color, fill, stroke, backdrop-filter, box-shadow, filter, opacity, transform;
+}
+
+.Bd1\;s\;\$accent600 {
+  border: 1px solid var(--ml-accent600);
+}
+
+.Mb1u {
+  margin-bottom: 0.25rem;
+}
+
+.-Ctx:focus-within .\^\:fw\:_C-\$accent200 {
+  color: var(--ml-accent200);
+}
