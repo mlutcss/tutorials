@@ -1,0 +1,22 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+div {
+	scrollbar-width:auto;
+	scrollbar-color: #3e4144 #16181c;
+}

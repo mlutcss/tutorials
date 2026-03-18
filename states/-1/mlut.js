@@ -1,3 +1,10 @@
+import { jitEngine } from 'https://unpkg.com/@mlut/core@2.5.1/dist/index.js';
+
+const bodyContent = document.body.outerHTML;
+const headElm = document.head;
+const styleElm = headElm.querySelector('style') ?? document.createElement('style');
+
+const sassConfig = `
 @use '@mlut/core/tools';
 @use '@mlut/core/dist/sass/css/styles/variables';
 @use '@mlut/core/dist/sass/css/helpers/btn';
@@ -17,3 +24,9 @@ html {
   --ml-secondary300: rgba(0,0,0,0.20);
   --ml-secondary200: rgba(0,0,0,0.10);
 }
+`;
+
+await jitEngine.init(['style.scss', sassConfig]);
+jitEngine.putContent('index.html', bodyContent);
+styleElm.innerHTML = await jitEngine.generateCss();
+headElm.appendChild(styleElm);

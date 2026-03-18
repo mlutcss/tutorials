@@ -40,7 +40,6 @@ Styleguide: css_lib.helpers.btn
 }
 
 html {
-  box-sizing: border-box;
   --ml-accent500: rgba(231, 233, 234, 0.5);
   --ml-accent900: #e7e9ea;
   --ml-accent850: #0f1419;
@@ -53,25 +52,6 @@ html {
   --ml-secondary400: rgba(0,0,0,0.40);
   --ml-secondary300: rgba(0,0,0,0.20);
   --ml-secondary200: rgba(0,0,0,0.10);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-button,
-input,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0;
-}
-
-div {
-  scrollbar-width: auto;
-  scrollbar-color: #3e4144 #16181c;
 }
 
 .Bgc-white {
@@ -460,6 +440,10 @@ div {
 
 .-Ctx:focus-within .\^\:fw\:_C-\$accent900 {
   color: var(--ml-accent900);
+}
+
+.Txw-w {
+  text-wrap: wrap;
 }
 
 .Rs-n {

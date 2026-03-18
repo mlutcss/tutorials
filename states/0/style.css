@@ -40,7 +40,6 @@ Styleguide: css_lib.helpers.btn
 }
 
 html {
-  box-sizing: border-box;
   --ml-accent500: rgba(231, 233, 234, 0.5);
   --ml-accent900: #e7e9ea;
   --ml-accent850: #0f1419;
@@ -53,25 +52,6 @@ html {
   --ml-secondary400: rgba(0,0,0,0.40);
   --ml-secondary300: rgba(0,0,0,0.20);
   --ml-secondary200: rgba(0,0,0,0.10);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-button,
-input,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0;
-}
-
-div {
-  scrollbar-width: auto;
-  scrollbar-color: #3e4144 #16181c;
 }
 
 .Bgc-white {
@@ -118,16 +98,12 @@ div {
   align-items: center;
 }
 
-.Mxw600 {
-  max-width: 600px;
+.W38gg {
+  width: calc(var(--ml-gg) * 38);
 }
 
-.W90p {
-  width: 90%;
-}
-
-.H160u {
-  height: 40rem;
+.H170u {
+  height: 42.5rem;
 }
 
 .Mxh90vh {
@@ -138,16 +114,12 @@ div {
   background-color: black;
 }
 
-.T5p {
-  top: 5%;
-}
-
 .P0\;0\;5u {
   padding: 0px 0px 1.25rem;
 }
 
-.H-\$headerHMxw600 {
-  height: var(--ml-headerHMxw600);
+.H-\$headerH {
+  height: var(--ml-headerH);
 }
 
 .Ai-str {
@@ -200,6 +172,10 @@ div {
   vertical-align: bottom;
 }
 
+.W90p {
+  width: 90%;
+}
+
 .P0\.5u\;0 {
   padding: 0.125rem 0px;
 }
@@ -222,10 +198,6 @@ div {
 
 .Ps {
   position: relative;
-}
-
-.Mt-\$headerH {
-  margin-top: var(--ml-headerH);
 }
 
 .H50u {
@@ -291,16 +263,4 @@ div {
 
 .-Ctx:focus-within .\^\:fw\:_C-\$accent200 {
   color: var(--ml-accent200);
-}
-
-.W38gg {
-  width: calc(var(--ml-gg) * 38);
-}
-
-.H170u {
-  height: 42.5rem;
-}
-
-.H-\$headerH {
-  height: var(--ml-headerH);
 }
