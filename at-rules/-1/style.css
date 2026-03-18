@@ -1,4 +1,23 @@
 /*
+CSS variables
+
+Global CSS custom properties which used in mlut.
+
+--ml-gg = 0.75rem - [grid gutter](section-concepts.html#kssref-concepts-custom_unit-gg).
+--ml-gscc = 12 - number of columns in the grid system. Sets by [$gs-columns](section-settings.html#kssref-settings-gs). Available only with `$legacy-grid-system` flag enabled
+
+Styleguide: css_lib.styles.css_vars
+*/
+:root {
+  --ml-gg: 0.75rem;
+}
+@media (min-width: 992px) {
+  :root {
+    --ml-gg: 1rem;
+  }
+}
+
+/*
 Btn
 
 Helper for creating buttons. Prepares any element to styling as a button.
@@ -51,7 +70,8 @@ textarea {
 }
 
 div {
-  scrollbar-width: none;
+  scrollbar-width: auto;
+  scrollbar-color: #3e4144 #16181c;
 }
 
 .Bgc-white {
@@ -139,8 +159,8 @@ div {
   height: var(--ml-headerH);
 }
 
-.Ps-f {
-  position: fixed;
+.Ps-sk {
+  position: sticky;
 }
 
 .Bgc\#000\*50p {
@@ -465,6 +485,31 @@ div {
 @media (min-width: 768px) {
   .md_P0\;5u_\:div div {
     padding: 0px 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .md_W38gg {
+    width: calc(var(--ml-gg) * 38);
+  }
+}
+@media (min-width: 768px) {
+  .md_H170u {
+    height: 42.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .md_Bdrd3u {
+    border-radius: 0.75rem;
+  }
+}
+@media (min-width: 768px) {
+  .md_Bdtlr3u {
+    border-top-left-radius: 0.75rem;
+  }
+}
+@media (min-width: 768px) {
+  .md_Bdblr3u {
+    border-bottom-left-radius: 0.75rem;
   }
 }
 @container form (min-width: 600px) {

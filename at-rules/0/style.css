@@ -1,4 +1,23 @@
 /*
+CSS variables
+
+Global CSS custom properties which used in mlut.
+
+--ml-gg = 0.75rem - [grid gutter](section-concepts.html#kssref-concepts-custom_unit-gg).
+--ml-gscc = 12 - number of columns in the grid system. Sets by [$gs-columns](section-settings.html#kssref-settings-gs). Available only with `$legacy-grid-system` flag enabled
+
+Styleguide: css_lib.styles.css_vars
+*/
+:root {
+  --ml-gg: 0.75rem;
+}
+@media (min-width: 992px) {
+  :root {
+    --ml-gg: 1rem;
+  }
+}
+
+/*
 Btn
 
 Helper for creating buttons. Prepares any element to styling as a button.
@@ -51,7 +70,8 @@ textarea {
 }
 
 div {
-  scrollbar-width: none;
+  scrollbar-width: auto;
+  scrollbar-color: #3e4144 #16181c;
 }
 
 .Bgc-white {
@@ -433,4 +453,60 @@ div {
 
 .Rs-n {
   resize: none;
+}
+
+.W38gg {
+  width: calc(var(--ml-gg) * 38);
+}
+
+.H170u {
+  height: 42.5rem;
+}
+
+.Bdrd3u {
+  border-radius: 0.75rem;
+}
+
+.Bdtlr5u {
+  border-top-left-radius: 1.25rem;
+}
+
+.Bdblr3u {
+  border-bottom-left-radius: 0.75rem;
+}
+
+.Ps-sk {
+  position: sticky;
+}
+
+.Bdtlr3u {
+  border-top-left-radius: 0.75rem;
+}
+
+.Bgc-\$secondary900_h:hover {
+  background-color: var(--ml-secondary900);
+}
+
+.Bgc-\$secondary850_h:hover {
+  background-color: var(--ml-secondary850);
+}
+
+.Bgc-\$secondary200_h:hover {
+  background-color: var(--ml-secondary200);
+}
+
+.Bgc-\$secondary300_h:hover {
+  background-color: var(--ml-secondary300);
+}
+
+.O0 {
+  opacity: 0;
+}
+
+.-Ctx-wallpaper:hover .\^wallpaper\:h\:_O1 {
+  opacity: 1;
+}
+
+.O1_h:hover {
+  opacity: 1;
 }

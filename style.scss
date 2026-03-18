@@ -1,4 +1,5 @@
 @use '@mlut/core/tools';
+@use '@mlut/core/dist/sass/css/styles/variables';
 @use '@mlut/core/dist/sass/css/helpers/btn';
 @use '@mlut/core/dist/sass/addons/demo-theme';
 
@@ -32,6 +33,8 @@ textarea {
   margin: 0;
 }
 
+
 div {
-	scrollbar-width: none;
+  scrollbar-width: auto;
+  scrollbar-color: #3e4144 #16181c;
 }
