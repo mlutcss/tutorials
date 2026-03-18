@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="settings.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body class="Bgc-white C-$accent900 -HeaderH13u M0">
+
+	<div class="Ps-a W100p H100vh Bgc-grey D-f Jc-c Ai-c">
+
+		<div class="Ps-a W38gg H170u Mxh90vh">
+
+			<div class="Bgc-black P0;0;5u">
+				<!-- Header -->
+
+				<header class="H-$headerH W100p">
+					<div class="D-f Ai-str Jc-fs -Sz100p">
+
+						<!-- Close button-->
+						<div class="W10p H100p">
+							<button class="Bd-n C-$accent900 Bgc-tp H100p Apcr1 D">
+								<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b">
+									<use href="img/sprite.svg#cross"></use>
+								</svg>
+							</button>
+						</div>
+
+						<!-- Caption-->
+						<div class="W90p H100p D-f Ai-c">
+							<span> Edit profile</span>
+						</div>
+
+						<div class="H100p P0.5u;0">
+							<!-- Save button -->
+							<button class="Ml-a D-f Ai-c Jc-c C-$accent850">
+								<span class="Lnh100p"> Save </span>
+							</button>
+						</div>
+					</div>
+				</header>
+
+				<!-- Form's main part -->
+
+				<main class="P0 Ps">
+
+					<!-- Profile wallpaper-->
+					<div class="H50u Ov-h Ps">
+						<!-- Wallpaper-->
+						<img src="img/wallpaper.jpg" class="D P0;1 W100p Ps" alt="wallpaper">
+						<div class="Ps-a Zi2 T0 L0 -Sz100p D-f Jc-c Ai-c Bgc-$secondary400">
+
+							<!-- Change wallpaper button-->
+							<button class="btn Bgc-$secondary400 Bdrd100p P2u">
+								<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b" >
+									<use href="img/sprite.svg#photo"></use>
+								</svg>
+							</button>
+
+							<!-- Delete wallpaper button -->
+							<button class="btn Bgc-$secondary400 Bdrd100p P2u">
+								<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b" >
+									<use href="img/sprite.svg#cross"></use>
+								</svg>
+							</button>
+
+						</div>
+					</div>
+
+					<div class="Ps H30u Bdrd100p Apcr1">
+						<!-- Profile photo-->
+						<img src="img/json.jpg" class="D Bdrd100p Mxw100p" alt="profile-photo">
+
+						<div class="Ps-a T0 L0 -Sz100p Bdrd100p D-f Jc-c Ai-c Bgc-$secondary200 ">
+							<!-- Change profile photo button-->
+							<button class="btn Bgc-$secondary400 -Ts Bdrd100p P2u">
+								<svg viewBox="0 0 24 24" aria-hidden="true" class="-Sz26 Us-n Va-b">
+									<use href="img/sprite.svg#photo"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<!-- The part with the inputs -->
+					<div>
+
+						<!-- Name -->
+						<div>
+							<label class="D Ps Bd1;s;$accent600 ">
+								<span class="D">Name</span>
+								<input maxlength="50" class="D W100p Bgc-tp" type="text" value="Json Statement">
+							</label>
+						</div>
+
+						<!-- Bio-->
+						<div>
+							<label>
+								<span class="D">Bio</span>
+
+								<textarea class="D W100p Bgc-tp" type="text">A professional Frontend dev and killer-feature maker with 20 years of experience</textarea>
+							</label>
+						</div>
+
+						<!-- Location -->
+						<div>
+							<label class="D Bd1;s;$accent600 ">
+								<span class="D">Location</span>
+								<input maxlength="100" class="D W100p Bgc-tp" type="text" value="Planet Earth">
+							</label>
+						</div>
+
+						<!-- Website -->
+						<div>
+							<label class="D">
+								<span class="D Mb1u ^:fw:_C-$accent200 -Ts">Website</span>
+								<input maxlength="100" class="D W100p Bgc-tp" type="text" value="https://mlut.style/">
+							</label>
+						</div>
+					</div>
+
+				</main>
+			</div>
+		</div>
+	</div>
+	<script type="importmap">
+		{
+			"imports": {
+				"immutable": "https://unpkg.com/immutable@^4.0.0",
+				"sass": "https://unpkg.com/sass@^1.63.0/sass.default.js"
+			}
+		}
+	</script>
+	<script src="mlut.js" type="module"></script>
+</body>
+</html>
